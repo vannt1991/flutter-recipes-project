@@ -2,5 +2,11 @@
     "language": "Việt Nam",
     "helloWorld": "Xin chào thế giới",
     "hello": "Xin chào {username}",
-    "titleHome": "Công thức nấu ăn"
+    "titleHome": "Công thức nấu ăn",
+    "description": "Mô tả",
+    "ingredients": "Thành phần",
+    "calories": "Calories",
+    "proteins": "Proteins",
+    "fats": "Fats",
+    "carbos": "Carbos"
 }

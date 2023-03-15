@@ -54,6 +54,7 @@ dependencies:
   kiwi: ^4.1.0
   # env variables
   flutter_dotenv: ^5.0.2
+  cached_network_image: ^3.2.3
 
 dev_dependencies:
   # tests

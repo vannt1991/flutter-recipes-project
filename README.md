@@ -44,7 +44,7 @@ To materialize the architectural decisions and to make it more useful to our tea
 
 \- To deal with internationalization we’ve decided to use pure Object Oriented Programming, and keep all Strings of the application as static constants of an implementation of an abstract class to be defined.
 
-\- To deal with navigation we’ve decided to use the _Flutters_ native _Navigator_, as it poses as a complete solution, and with the arrival of Get Router, we think that it is an elegant declarative solution to deal with navigation.
+\- To deal with navigation we’ve decided to use the _Flutters_ native _Navigator_, as it poses as a complete solution, and with the arrival of Get Router, we think that it is an elegant declarative solution to deal with navigation. But we can easily switch to flutter navigator following this guide <https://api.flutter.dev/flutter/widgets/Navigator-class.html>, and on production, i prefer using native flutter navigator to navigation and router pages.
 
 \- To deal with http requests we’ve decided to use [**Dio package**](https://pub.dev/packages/dio) as it is a better option than the native _Flutter_ solution presenting good features like Interceptors, base options like headers, base url etc., and is a well known and popular solution. Then we made a wrapper over the client to model errors and responses into our system context.
 

@@ -1,17 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../l10n/l10n.dart';
-
-class LocaleProvider extends ChangeNotifier {
-  Locale? _locale;
-
-  Locale? get locale => _locale;
-
-  set locale(Locale? locale) {
-    _locale = locale;
-    notifyListeners();
-  }
-}
+import '../locale_cubit/locale_cubit.dart';
 
 class LanguageWidget extends StatelessWidget {
   const LanguageWidget({Key? key}) : super(key: key);
@@ -39,37 +29,32 @@ class LanguagePickerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // the same with context.watch<LocaleProvider>()
-    final provider = Provider.of<LocaleProvider>(context);
-    final locale = provider.locale ?? const Locale('en');
-
+    final provider = BlocProvider.of<LocaleCubit>(context, listen: true);
+    final locale = provider.locale;
     return DropdownButtonHideUnderline(
-      child: DropdownButton(
-        value: locale,
-        icon: Container(width: 12),
-        items: L10n.all.map(
-          (locale) {
-            final flag = L10n.getFlag(locale.languageCode);
+        child: DropdownButton(
+      value: locale,
+      icon: Container(width: 12),
+      items: L10n.all.map(
+        (locale) {
+          final flag = L10n.getFlag(locale.languageCode);
 
-            return DropdownMenuItem(
-              value: locale,
-              onTap: () {
-                final provider =
-                    Provider.of<LocaleProvider>(context, listen: false);
-
-                provider.locale = locale;
-              },
-              child: Center(
-                child: Text(
-                  flag,
-                  style: const TextStyle(fontSize: 32),
-                ),
+          return DropdownMenuItem(
+            value: locale,
+            onTap: () {
+              provider.clearLocale();
+              provider.setLocale(locale);
+            },
+            child: Center(
+              child: Text(
+                flag,
+                style: const TextStyle(fontSize: 32),
               ),
-            );
-          },
-        ).toList(),
-        onChanged: (_) {},
-      ),
-    );
+            ),
+          );
+        },
+      ).toList(),
+      onChanged: (_) {},
+    ));
   }
 }

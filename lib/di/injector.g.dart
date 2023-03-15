@@ -31,6 +31,7 @@ class _$Injector extends Injector {
           remoteDataSource: c<RecipesRemoteDataSource>()))
       ..registerFactory((c) => RecipesCubit(
           c<NetworkInfoI>(), c<GetRemoteRecipes>(), c<GetLocalRecipes>()))
+      ..registerFactory((c) => LocaleCubit())
       ..registerFactory((c) => RecipesBloc(
           c<NetworkInfoI>(), c<GetRemoteRecipes>(), c<GetLocalRecipes>()));
   }

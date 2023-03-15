@@ -1,11 +1,13 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'package:get/get.dart';
+import 'package:get/get.dart' as _get;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'package:exam_recipes_api/app/theme/theme_data.dart';
 import 'package:provider/provider.dart';
+import 'app/presentation/locale_cubit/locale_cubit.dart';
 import 'app/presentation/widgets/language_widget.dart';
 import 'app/routes/app_pages.dart';
 import 'di/injector.dart';
@@ -16,16 +18,17 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: ".env");
   Injector.setup();
-  runApp(ChangeNotifierProvider(
-      create: (_) => LocaleProvider(),
-      builder: (context, child) {
+  runApp(BlocProvider<LocaleCubit>(
+    create: (_) => Injector.resolve<LocaleCubit>(),
+    child: Builder(
+      builder: (context) {
         final fixedLocale =
-            context.watch<LocaleProvider>().locale ?? const Locale('en');
-        Get.updateLocale(fixedLocale);
-        return GetMaterialApp(
+            context.watch<LocaleCubit>().locale;
+        _get.Get.updateLocale(fixedLocale);
+        return _get.GetMaterialApp(
           scrollBehavior: MyCustomScrollBehavior(),
           debugShowCheckedModeBanner: false,
-          defaultTransition: Transition.topLevel,
+          defaultTransition: _get.Transition.topLevel,
           onGenerateTitle: (context) {
             return AppLocalizations.of(context)!.titleHome;
           },
@@ -37,7 +40,9 @@ Future<void> main() async {
           locale: fixedLocale,
           localizationsDelegates: AppLocalizations.localizationsDelegates,
         );
-      }));
+      },
+    ),
+  ));
 }
 
 // support desktop app (windows or macos)

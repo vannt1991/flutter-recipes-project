@@ -12,6 +12,7 @@ class RecipeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        // for quickly we using dynamic navigator, for large project we navigation using name of router
         Navigator.of(context).push(MaterialPageRoute(
             builder: (builder) => DetailScreen(
                   recipe: recipe,

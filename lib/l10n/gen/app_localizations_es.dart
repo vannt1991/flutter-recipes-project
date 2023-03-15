@@ -17,4 +17,22 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get titleHome => 'Home as';
+
+  @override
+  String get description => 'Description';
+
+  @override
+  String get ingredients => 'Ingredients';
+
+  @override
+  String get calories => 'Calories';
+
+  @override
+  String get proteins => 'Proteins';
+
+  @override
+  String get fats => 'Fats';
+
+  @override
+  String get carbos => 'Carbos';
 }

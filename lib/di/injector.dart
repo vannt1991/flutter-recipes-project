@@ -21,6 +21,7 @@ import '../app/core/network/network_info.dart';
 
 import '../app/presentation/home_bloc/controller/index.dart';
 import '../app/presentation/home_cubit/controller/index.dart';
+import '../app/presentation/locale_cubit/locale_cubit.dart';
 
 part 'injector.g.dart';
 
@@ -65,6 +66,7 @@ abstract class Injector {
   @Register.singleton(GetRemoteRecipes)
   @Register.singleton(RecipesRepository, from: RecipesRepositoryImpl)
   @Register.factory(RecipesCubit)
+  @Register.factory(LocaleCubit)
   @Register.factory(RecipesBloc)
   void _configureRecipesFeatureModuleFactories();
 }

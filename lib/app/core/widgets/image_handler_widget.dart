@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../assets/const.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 import 'index.dart';
 
@@ -15,13 +14,10 @@ class ImageHandlerWidget extends StatelessWidget {
           borderRadius: BorderRadius.circular(24.0),
           child: AspectRatio(
             aspectRatio: 1,
-            child: FadeInImage.assetNetwork(
-              fit: BoxFit.cover,
-              fadeInDuration: const Duration(milliseconds: 500),
-              placeholder: loadingAsset,
-              image: urlToImage,
-              imageErrorBuilder: (context, obj, error) =>
-                  const AssetImageWidget(),
+            child: CachedNetworkImage(
+              placeholder: (context, url) => const AssetImageWidget(),
+              errorWidget: (context, url, error) => const AssetImageWidget(),
+              imageUrl: urlToImage,
             ),
           )),
     );

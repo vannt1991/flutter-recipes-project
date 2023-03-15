@@ -16,5 +16,11 @@
          }
       }
     },
-    "titleHome": "Recipes"
+    "titleHome": "Recipes",
+    "description": "Description",
+    "ingredients": "Ingredients",
+    "calories": "Calories",
+    "proteins": "Proteins",
+    "fats": "Fats",
+    "carbos": "Carbos"
 }

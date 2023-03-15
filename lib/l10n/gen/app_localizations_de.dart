@@ -17,4 +17,22 @@ class AppLocalizationsDe extends AppLocalizations {
 
   @override
   String get titleHome => 'Rezepte';
+
+  @override
+  String get description => 'Beschreibung';
+
+  @override
+  String get ingredients => 'Zutaten';
+
+  @override
+  String get calories => 'Calories';
+
+  @override
+  String get proteins => 'Proteins';
+
+  @override
+  String get fats => 'Fats';
+
+  @override
+  String get carbos => 'Carbos';
 }

@@ -2,5 +2,11 @@
     "language": "Deutsch",
     "helloWorld": "Hallo Welt!",
     "hello": "Hallo {username}",
-    "titleHome": "Rezepte"
+    "titleHome": "Rezepte",
+    "description": "Beschreibung",
+    "ingredients": "Zutaten",
+    "calories": "Calories",
+    "proteins": "Proteins",
+    "fats": "Fats",
+    "carbos": "Carbos"
 }
