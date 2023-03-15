@@ -1,0 +1,85 @@
+{"protocolVersion":"0.1.1","runnerVersion":"1.22.0","pid":60250,"type":"start","time":0}
+{"suite":{"id":0,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/core/network/network_info_test.dart"},"type":"suite","time":0}
+{"test":{"id":1,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/core/network/network_info_test.dart","suiteID":0,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":1}
+{"suite":{"id":2,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/datasources/articles_remote_datasource_test.dart"},"type":"suite","time":8}
+{"test":{"id":3,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/datasources/articles_remote_datasource_test.dart","suiteID":2,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":8}
+{"suite":{"id":4,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"suite","time":8}
+{"test":{"id":5,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart","suiteID":4,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":8}
+{"suite":{"id":6,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_local_recipes_test.dart"},"type":"suite","time":9}
+{"test":{"id":7,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_local_recipes_test.dart","suiteID":6,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":9}
+{"count":7,"time":10,"type":"allSuites"}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59755/za-Vh77MtuY=/"}}]
+{"testID":1,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":3853}
+{"group":{"id":8,"suiteID":0,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":null,"column":null,"url":null},"type":"group","time":3858}
+{"group":{"id":9,"suiteID":0,"parentID":8,"name":"isConnected ","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":18,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/core/network/network_info_test.dart"},"type":"group","time":3859}
+{"test":{"id":10,"name":"isConnected  should call Connectivity.checkConnectivity and return true if result is wifi / mobile, else return false","suiteID":0,"groupIDs":[8,9],"metadata":{"skip":false,"skipReason":null},"line":19,"column":5,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/core/network/network_info_test.dart"},"type":"testStart","time":3859}
+{"testID":10,"error":"type 'Null' is not a subtype of type 'Future<ConnectivityResult>'","stackTrace":"test/core/network/network_info_test.dart 7:7    ConnectivityMock.checkConnectivity\ntest/core/network/network_info_test.dart 23:27  main.<fn>.<fn>\n","isFailure":false,"type":"error","time":4121}
+{"testID":10,"result":"error","skipped":false,"hidden":false,"type":"testDone","time":4121}
+{"suite":{"id":11,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_remote_recipes_test.dart"},"type":"suite","time":4521}
+{"test":{"id":12,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_remote_recipes_test.dart","suiteID":11,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":4521}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59762/QxQ-FUcqt78=/"}}]
+{"testID":3,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5129}
+{"group":{"id":13,"suiteID":2,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":5130}
+{"test":{"id":14,"name":"should return recipes data when the call to rest client is successful","suiteID":2,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":34,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/datasources/articles_remote_datasource_test.dart"},"type":"testStart","time":5130}
+{"testID":14,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5247}
+{"test":{"id":15,"name":"should return failure when the call to rest client ends with Exception","suiteID":2,"groupIDs":[13],"metadata":{"skip":false,"skipReason":null},"line":49,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/datasources/articles_remote_datasource_test.dart"},"type":"testStart","time":5274}
+{"testID":15,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":5292}
+{"suite":{"id":16,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_cubit/recipes_cubit_test.dart"},"type":"suite","time":5507}
+{"test":{"id":17,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_cubit/recipes_cubit_test.dart","suiteID":16,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":5507}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59772/2e9iL-TdHyM=/"}}]
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59777/63ISMowUGPo=/"}}]
+{"testID":5,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":5943}
+{"group":{"id":18,"suiteID":4,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":4,"line":null,"column":null,"url":null},"type":"group","time":5962}
+{"group":{"id":19,"suiteID":4,"parentID":18,"name":"remote recipes:","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":96,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"group","time":5962}
+{"test":{"id":20,"name":"remote recipes: should return recipes data when the call to remoteDataSource is successful, and insert recipes to localDataSource","suiteID":4,"groupIDs":[18,19],"metadata":{"skip":false,"skipReason":null},"line":97,"column":5,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"testStart","time":5962}
+{"testID":20,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6046}
+{"test":{"id":21,"name":"remote recipes: should return failure when the call to remoteDataSource is failed","suiteID":4,"groupIDs":[18,19],"metadata":{"skip":false,"skipReason":null},"line":115,"column":5,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"testStart","time":6053}
+{"testID":21,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6058}
+{"group":{"id":22,"suiteID":4,"parentID":18,"name":"local recipes:","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":134,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"group","time":6059}
+{"test":{"id":23,"name":"local recipes: should return recipes data when the call to localDataSource return with none empty or null data","suiteID":4,"groupIDs":[18,22],"metadata":{"skip":false,"skipReason":null},"line":135,"column":5,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"testStart","time":6059}
+{"testID":23,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6064}
+{"test":{"id":24,"name":"local recipes: should return failure when the call to localDataSource return with empty or null data","suiteID":4,"groupIDs":[18,22],"metadata":{"skip":false,"skipReason":null},"line":151,"column":5,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/data/repository/articles_repository_impl_test.dart"},"type":"testStart","time":6064}
+{"testID":24,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":6068}
+{"suite":{"id":25,"platform":"vm","path":"/Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_bloc/recipes_bloc_test.dart"},"type":"suite","time":6271}
+{"test":{"id":26,"name":"loading /Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_bloc/recipes_bloc_test.dart","suiteID":25,"groupIDs":[],"metadata":{"skip":false,"skipReason":null},"line":null,"column":null,"url":null},"type":"testStart","time":6271}
+{"testID":7,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":6362}
+{"group":{"id":27,"suiteID":6,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":6401}
+{"test":{"id":28,"name":"should get local recipes from the repository","suiteID":6,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":26,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_local_recipes_test.dart"},"type":"testStart","time":6401}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59785/C1dVVwPu51E=/"}}]
+{"testID":12,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":7118}
+{"group":{"id":29,"suiteID":11,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":7119}
+{"test":{"id":30,"name":"should get remote recipes from the repository","suiteID":11,"groupIDs":[29],"metadata":{"skip":false,"skipReason":null},"line":25,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_remote_recipes_test.dart"},"type":"testStart","time":7119}
+{"testID":30,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7185}
+{"test":{"id":31,"name":"should get failure from the repository","suiteID":11,"groupIDs":[29],"metadata":{"skip":false,"skipReason":null},"line":39,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_remote_recipes_test.dart"},"type":"testStart","time":7185}
+{"testID":31,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7190}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59798/gSwYUEgC8o0=/"}}]
+{"testID":28,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7464}
+{"test":{"id":32,"name":"should get failure from the repository","suiteID":6,"groupIDs":[27],"metadata":{"skip":false,"skipReason":null},"line":40,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/domain/usecases/get_local_recipes_test.dart"},"type":"testStart","time":7464}
+{"testID":17,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":7728}
+{"group":{"id":33,"suiteID":16,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":7729}
+{"group":{"id":34,"suiteID":16,"parentID":33,"name":"is online","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":39,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_cubit/recipes_cubit_test.dart"},"type":"group","time":7729}
+{"test":{"id":35,"name":"is online should emits [Loading, Success] when cubit.getRecipes is called succesfuly.","suiteID":16,"groupIDs":[33,34],"metadata":{"skip":false,"skipReason":null},"line":153,"column":8,"url":"package:bloc_test/src/bloc_test.dart","root_line":40,"root_column":5,"root_url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_cubit/recipes_cubit_test.dart"},"type":"testStart","time":7729}
+{"testID":35,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7811}
+{"group":{"id":36,"suiteID":16,"parentID":33,"name":"is offline","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":61,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_cubit/recipes_cubit_test.dart"},"type":"group","time":7811}
+{"test":{"id":37,"name":"is offline should emits [Loading, Success] when cubit.getRecipes is called succesfuly.","suiteID":16,"groupIDs":[33,36],"metadata":{"skip":false,"skipReason":null},"line":153,"column":8,"url":"package:bloc_test/src/bloc_test.dart","root_line":62,"root_column":5,"root_url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_cubit/recipes_cubit_test.dart"},"type":"testStart","time":7812}
+{"testID":37,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":7820}
+
+[{"event":"test.startedProcess","params":{"observatoryUri":"http://127.0.0.1:59805/CO52CxiWlUU=/"}}]
+{"testID":26,"result":"success","skipped":false,"hidden":true,"type":"testDone","time":8385}
+{"group":{"id":38,"suiteID":25,"parentID":null,"name":"","metadata":{"skip":false,"skipReason":null},"testCount":2,"line":null,"column":null,"url":null},"type":"group","time":8398}
+{"group":{"id":39,"suiteID":25,"parentID":38,"name":"is online","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":40,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_bloc/recipes_bloc_test.dart"},"type":"group","time":8398}
+{"test":{"id":40,"name":"is online should emits [Loading, Success] when [GetData] event is called successfully.","suiteID":25,"groupIDs":[38,39],"metadata":{"skip":false,"skipReason":null},"line":153,"column":8,"url":"package:bloc_test/src/bloc_test.dart","root_line":41,"root_column":5,"root_url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_bloc/recipes_bloc_test.dart"},"type":"testStart","time":8407}
+{"testID":40,"messageType":"print","message":"mapEventToState RecipesEvent.getData()","type":"print","time":8464}
+{"testID":32,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8470}
+{"testID":40,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8507}
+{"group":{"id":41,"suiteID":25,"parentID":38,"name":"is offline","metadata":{"skip":false,"skipReason":null},"testCount":1,"line":62,"column":3,"url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_bloc/recipes_bloc_test.dart"},"type":"group","time":8507}
+{"test":{"id":42,"name":"is offline should emits [Loading, Success] when [GetData] event is called successfully.","suiteID":25,"groupIDs":[38,41],"metadata":{"skip":false,"skipReason":null},"line":153,"column":8,"url":"package:bloc_test/src/bloc_test.dart","root_line":64,"root_column":5,"root_url":"file:///Users/vannt1991/Desktop/flutter/web_provise_recipes_flutter/test/presentation/home_bloc/recipes_bloc_test.dart"},"type":"testStart","time":8507}
+{"testID":42,"messageType":"print","message":"mapEventToState RecipesEvent.getData()","type":"print","time":8512}
+{"testID":42,"result":"success","skipped":false,"hidden":false,"type":"testDone","time":8520}
+{"success":false,"type":"done","time":8713}

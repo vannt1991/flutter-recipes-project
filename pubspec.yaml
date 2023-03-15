@@ -1,0 +1,98 @@
+name: exam_recipes_api
+description: Recipes app with GetX.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.2 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # api
+  retrofit: any
+  logger: any
+  # network info
+  connectivity: ^3.0.6
+  # functional programming
+  dartz: ^0.10.1
+  # value equality
+  equatable: ^2.0.5
+  # json
+  json_annotation: ^4.8.0
+  # freezed
+  freezed_annotation: ^2.2.0
+  # meta
+  meta: ^1.2.3
+  # bloc state managment
+  flutter_bloc: ^8.1.2
+  # GetX mico-framework
+  get: ^4.6.5
+  # network
+  http: ^0.13.5
+  #Localization
+  flutter_localizations:
+    sdk: flutter
+  #multi language
+  intl: ^0.17.0
+  # improve code
+  # lint: ^2.1.1
+  # device native folders
+  path_provider: ^2.0.13
+  # sql db (local storage)
+  sqflite: ^2.2.6
+  # no sql db (local storage)
+  sembast: ^3.4.1+1
+  # no sql db (local storage)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  # url helper
+  url_launcher: ^6.1.10
+  # IoC
+  kiwi: ^4.1.0
+  # env variables
+  flutter_dotenv: ^5.0.2
+
+dev_dependencies:
+  # tests
+  flutter_driver:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  mockito:
+  bloc_test: ^9.1.1
+  test: any
+
+  # native icons & splash
+  flutter_launcher_icons: ^0.12.0
+  flutter_native_splash: ^2.2.19
+
+  # code generators
+  build_runner: ^2.3.0
+  freezed: ^2.3.2
+  json_serializable: ^6.6.1
+  retrofit_generator: 6.0.0+1
+  hive_generator: ^2.0.0
+  kiwi_generator: ^4.1.0
+  flutter_lints: ^2.0.0
+
+# flutter icons setup
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icon.png"
+
+# flutter splash screen setup
+flutter_native_splash:
+  image: assets/images/splash_icon.png
+  color: "#FFFFFF"
+  android_disable_fullscreen: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/loading.jpg
+    - assets/images/placeHolder.jpg
