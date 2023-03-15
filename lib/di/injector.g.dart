@@ -23,7 +23,7 @@ class _$Injector extends Injector {
       ..registerSingleton(
           (c) => RecipesRemoteDataSource(client: c<RestClient>()))
       ..registerSingleton<RecipesLocalDataSource>(
-          (c) => RecipesLocalDataSourceSqlImpl())
+          (c) => RecipesLocalDataSourceHiveImpl())
       ..registerSingleton((c) => GetLocalRecipes(c<RecipesRepository>()))
       ..registerSingleton((c) => GetRemoteRecipes(c<RecipesRepository>()))
       ..registerSingleton<RecipesRepository>((c) => RecipesRepositoryImpl(

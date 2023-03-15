@@ -60,7 +60,7 @@ abstract class Injector {
   // Recipes Feature module factories
   @Register.singleton(RecipesRemoteDataSource)
   @Register.singleton(RecipesLocalDataSource,
-      from: RecipesLocalDataSourceSqlImpl)
+      from: RecipesLocalDataSourceHiveImpl)
   @Register.singleton(GetLocalRecipes)
   @Register.singleton(GetRemoteRecipes)
   @Register.singleton(RecipesRepository, from: RecipesRepositoryImpl)
