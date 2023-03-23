@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 
-import '../../../l10n/gen/app_localizations.dart';
 import '../../core/widgets/app_bar.dart';
+import '../../core/widgets/index.dart' as core_widgets;
 import '../widgets/language_widget.dart';
 import 'home_controller.dart';
-
-import '../../core/widgets/index.dart' as core_widgets;
 import 'widgets/widgets.dart';
 
 class HomeViewGetX extends GetView<HomeController> {

@@ -1,5 +1,6 @@
 // ignore_for_file: constant_identifier_names
 
+import '../presentation/home_riverpod/view/home_view.dart';
 import '../presentation/index.dart';
 
 import 'package:get/get.dart';
@@ -39,6 +40,19 @@ class AppPages {
       name: Routes.HOME,
       binding: HomeBinding(),
       page: () => const HomeViewGetX(),
+    ),
+    GetPage(
+      name: Routes.LOADING,
+      page: () => const LoadingView(),
+      binding: LoadingBinding(),
+    ),
+  ];
+
+  static final riverPodRoutes = [
+    GetPage(
+      name: Routes.HOME,
+      binding: HomeBinding(),
+      page: () => const HomeViewRiverPod(),
     ),
     GetPage(
       name: Routes.LOADING,

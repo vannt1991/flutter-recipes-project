@@ -1,3 +1,4 @@
+import 'package:exam_recipes_api/app/presentation/home_riverpod/controller/index.dart';
 import 'package:kiwi/kiwi.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:connectivity/connectivity.dart';
@@ -68,5 +69,8 @@ abstract class Injector {
   @Register.factory(RecipesCubit)
   @Register.factory(LocaleCubit)
   @Register.factory(RecipesBloc)
+
+  @Register.factory(HomeRiverPodController)
+
   void _configureRecipesFeatureModuleFactories();
 }

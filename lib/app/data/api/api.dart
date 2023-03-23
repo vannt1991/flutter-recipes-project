@@ -1,6 +1,7 @@
-import '../models/recipe_model/recipe_model.dart';
-import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
+import 'package:retrofit/retrofit.dart';
+
+import '../models/recipe_model/recipe_model.dart';
 
 part 'api.g.dart';
 

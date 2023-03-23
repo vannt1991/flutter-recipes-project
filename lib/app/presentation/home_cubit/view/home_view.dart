@@ -1,12 +1,9 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:exam_recipes_api/di/injector.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../core/widgets/app_bar.dart';
 import '../../../core/widgets/index.dart' as core_widgets;
-
 import '../controller/index.dart';
 import '../widgets/widgets.dart';
 
