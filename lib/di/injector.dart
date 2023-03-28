@@ -71,6 +71,7 @@ abstract class Injector {
   @Register.factory(RecipesBloc)
 
   @Register.factory(HomeRiverPodController)
+  @Register.factory(HomeRiverPodControllerAsync)
 
   void _configureRecipesFeatureModuleFactories();
 }

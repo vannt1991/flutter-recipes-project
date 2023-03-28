@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../controller/index.dart';
+class FAB extends StatelessWidget {
+  final VoidCallback onPressed;
 
-class FAB extends ConsumerWidget {
-  const FAB({super.key});
+  const FAB({
+    super.key,
+    required this.onPressed,
+  });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     return FloatingActionButton.extended(
         key: const ValueKey('FAB'),
-        onPressed: () => ref.read(homeControllerProvider.notifier).getData(),
+        onPressed: onPressed,
         backgroundColor: Colors.amber,
         icon: const Icon(
           Icons.refresh,

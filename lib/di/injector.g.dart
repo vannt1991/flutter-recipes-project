@@ -35,6 +35,8 @@ class _$Injector extends Injector {
       ..registerFactory((c) => RecipesBloc(
           c<NetworkInfoI>(), c<GetRemoteRecipes>(), c<GetLocalRecipes>()))
       ..registerFactory((c) => HomeRiverPodController(
+          c<NetworkInfoI>(), c<GetRemoteRecipes>(), c<GetLocalRecipes>()))
+      ..registerFactory((c) => HomeRiverPodControllerAsync(
           c<NetworkInfoI>(), c<GetRemoteRecipes>(), c<GetLocalRecipes>()));
   }
 }

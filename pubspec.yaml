@@ -56,6 +56,7 @@ dependencies:
   flutter_dotenv: ^5.0.2
   cached_network_image: ^3.2.3
   flutter_riverpod: ^2.3.2
+  riverpod_annotation: ^2.0.2
 
 dev_dependencies:
   # tests
@@ -79,6 +80,7 @@ dev_dependencies:
   hive_generator: ^2.0.0
   kiwi_generator: ^4.1.0
   flutter_lints: ^2.0.0
+  riverpod_generator: ^2.1.4
 
 # flutter icons setup
 flutter_icons:

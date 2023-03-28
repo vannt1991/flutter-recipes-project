@@ -6,26 +6,27 @@ import '../../../core/widgets/index.dart' as core_widgets;
 import '../controller/index.dart';
 import '../widgets/widgets.dart';
 
-class HomeViewRiverPod extends ConsumerStatefulWidget {
-  const HomeViewRiverPod({super.key});
+class HomeViewRiverPodAsync extends ConsumerStatefulWidget {
+  const HomeViewRiverPodAsync({super.key});
 
   @override
   ConsumerState<ConsumerStatefulWidget> createState() =>
       _DepartmentCreateFormState();
 }
 
-class _DepartmentCreateFormState extends ConsumerState<HomeViewRiverPod> {
+class _DepartmentCreateFormState extends ConsumerState<HomeViewRiverPodAsync> {
   @override
   void initState() {
     super.initState();
 
     // final value = ref.read(helloWorldProvider);
     // print(value); // Hello world
-    ref.read(homeControllerProvider.notifier).getData();
+    // Future.microtask(
+    //     () => ref.read(homeControllerProviderAsync.notifier).getData());
   }
 
   Widget buildBody(BuildContext context) {
-    final res = ref.watch(homeControllerProvider);
+    final res = ref.watch(homeControllerProviderAsync);
     final errorText = res.maybeWhen(
       error: (error, stackTrace) => error.toString(),
       orElse: () => null,
@@ -36,7 +37,7 @@ class _DepartmentCreateFormState extends ConsumerState<HomeViewRiverPod> {
     }
 
     final isLoading = res.maybeWhen(
-      data: (_) => res.isRefreshing,
+      data: (_) => res.isLoading || res.isRefreshing || res.isReloading,
       loading: () => true,
       orElse: () => false,
     );
@@ -56,7 +57,8 @@ class _DepartmentCreateFormState extends ConsumerState<HomeViewRiverPod> {
         appBar: appBar(),
         body: buildBody(context),
         floatingActionButton: FAB(
-          onPressed: () => ref.read(homeControllerProvider.notifier).getData(),
+          onPressed: () =>
+              ref.read(homeControllerProviderAsync.notifier).getData(),
         ),
       ),
     );
